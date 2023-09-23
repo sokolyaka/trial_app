@@ -43,7 +43,7 @@ react {
     //   The name of the generated asset file containing your JS bundle
     // bundleAssetName = "MyApplication.android.bundle"
     //
-    //   The entry file for bundle generation. Default is 'index.android.js' or 'index.js'
+    //   The entry file for bundle generation. Default is 'index.android.js' or 'index.tsx'
     // entryFile = file("../js/MyApplication.android.js")
     //
     //   A list of extra flags to pass to the 'bundle' commands.
@@ -137,6 +137,9 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'com.pspdfkit:pspdfkit:8.8.1'
 
     def isGifEnabled = (findProperty('expo.gif.enabled') ?: "") == "true";
     def isWebpEnabled = (findProperty('expo.webp.enabled') ?: "") == "true";

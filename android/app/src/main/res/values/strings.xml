@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">trial_app</string>
+    <string name="hello_blank_fragment">This is a blank view.\nReact native crates own view with an input field where a user enter an URL to a PDF</string>
 </resources>
